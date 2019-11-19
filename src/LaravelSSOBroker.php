@@ -1,9 +1,9 @@
 <?php
 
-namespace Zefy\LaravelSSO;
+namespace andcarpi\LaravelSSOBroker;
 
 use Illuminate\Support\Facades\Cookie;
-use Zefy\LaravelSSO\Exceptions\MissingConfigurationException;
+use andcarpi\LaravelSSOBroker\Exceptions\MissingConfigurationException;
 use Zefy\SimpleSSO\SSOBroker;
 use GuzzleHttp;
 
