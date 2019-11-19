@@ -43,9 +43,9 @@ class LaravelSSOBroker extends SSOBroker
      */
     protected function setOptions()
     {
-        $this->ssoServerUrl = config('laravel-sso.serverUrl', null);
-        $this->brokerName = config('laravel-sso.brokerName', null);
-        $this->brokerSecret = config('laravel-sso.brokerSecret', null);
+        $this->ssoServerUrl = config('laravel-sso-broker.serverUrl', null);
+        $this->brokerName = config('laravel-sso-broker.brokerName', null);
+        $this->brokerSecret = config('laravel-sso-broker.brokerSecret', null);
 
         if (!$this->ssoServerUrl || !$this->brokerName || !$this->brokerSecret) {
             throw new MissingConfigurationException('Missing configuration values.');

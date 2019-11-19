@@ -47,7 +47,7 @@ class SSOAutoLogin
      */
     protected function clearSSOCookie(Request $request)
     {
-        return redirect($request->fullUrl())->cookie(cookie('sso_token_' . config('laravel-sso.brokerName')));
+        return redirect($request->fullUrl())->cookie(cookie('sso_token_' . config('laravel-sso-broker.brokerName')));
     }
 
     /**
